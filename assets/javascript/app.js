@@ -1,19 +1,10 @@
-$( document ).ready(function() {
-    // Global Variables
-    //------------------------------------------------------------------------------
-    
+$(document).ready(function() {
+  
     var topics = ["mike meyers", "anne hathaway", "julie andrews", "robin williams",
-    "meryl streep", "emily blunt", "stanley tucci", "hugh jackman", "zac efron", "michelle williams", "anna kendrick", "rebel wilson", "elizabeth banks", "adam devine", "tom hanks", "johnny depp", "morgan freeman", "ryan gosling", "dwayne johnson", "al pacino", "george clooney", "ryan reynolds", "ed norton", "kaley cuoco", "johnny galecki", "mayim bialik", "judd apatow"];
-    
-    
-    
-    
-    
-    
-    // Functions
-    //------------------------------------------------------------------------------
-    
-    // adds buttons for gifs array
+    "meryl streep", "emily blunt", "stanley tucci", "hugh jackman", "zac efron", "michelle williams", "anna kendrick", "rebel wilson", "elizabeth banks", "adam devine", "tom hanks", "johnny depp", "morgan freeman", "ryan gosling", "dwayne johnson", "al pacino", "george clooney", "ryan reynolds", "ed norton", "kaley cuoco", "johnny galecki",  "judd apatow"];
+  
+
+    // let's make the buttons for the topics array
     gifButtons = function() {
     
         $("#gifButtonLibrary").empty();
@@ -48,11 +39,8 @@ displayGifs = function () {
 
 }
     
+    // enter new value to add to array
     
-    // Main Process
-    //------------------------------------------------------------------------------
-    
-    //this click function will put the user inout into the gif array
     $("#gifSubmit").on("click", function(event) {
     
             event.preventDefault();
@@ -66,7 +54,7 @@ displayGifs = function () {
     
     function GifButton (btn) {
           var gifBtn = $("<button>");
-          gifBtn.addClass("btn btn-success gifButton");
+          gifBtn.addClass("btn btn-light gifButton");
           gifBtn.attr("giphy", btn);
           gifBtn.text(btn);
           gifBtn.on('click', displayGifs);

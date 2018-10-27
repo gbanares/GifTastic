@@ -1,7 +1,7 @@
 body {
     background-image: url("../images/concrete_seamless.png")
 }
-#footer {
+footer {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid black;
