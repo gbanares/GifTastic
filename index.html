@@ -38,45 +38,42 @@
         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
             <div class="col-md-9 px-0">
                 <h1 class="display-4 font-italic">Giphy This!</h1>
-                <h6>Click a premade value or add your own! Click on the image to run or stop the image.</h6>
+                <h6>Click a button or add your own! Click on the image to run or stop the image.</h6>
             </div>
         </div>
-    
 
 
 
-    <div class="container">
-        <!-- this row will contain all the gif buttons -->
-        <div class="row" id="row1">
-            <div class="col-md-12" id=gifButtonLibrary></div>
+
+        <div class="container">
+            <!-- this row will contain all the gif buttons -->
+            <div class="row" id="row1">
+                <div class="col-md-12" id=gifButtonLibrary></div>
+            </div>
+            <!-- this row will display the gifs + have input feild for new buttons -->
+            <div class="row" id="row2">
+                <div class="col-md-3 col-sm-12" id=gifInput>
+                    <form>
+                        <div class="form-group" id="inputForm">
+                            <label for="newGifButtons">Add New Gifs</label>
+                            <input type="text" class="form-control" id="newGifButtons" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="gifSubmit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-9 col-sm-12" id=gifDisplay>
+                    <hr>
+                </div>
+            </div>
+
         </div>
-        <!-- this row will display the gifs + have input feild for new buttons -->
-        <div class="row" id="row2">
-            <div class="col-md-3 col-sm-12" id=gifInput>
-                <form>
-                    <div class="form-group" id="inputForm">
-                        <label for="newGifButtons">Add New Gifs</label>
-                        <input type="text" class="form-control" id="newGifButtons" placeholder="">
-                    </div>
-                    <button type="submit" class="btn btn-default" id="gifSubmit">Submit</button>
-                </form>
-            </div>
-            <div class="col-md-9 col-sm-12" id=gifDisplay>
-                <hr>
-            </div>
+
+        <!-- footer -->
+        <div class="footer">
+        <p>Copyright 2018, by <a href="https://gbanares.github.io/gbanares/">@gb</a></p>
         </div>
 
     </div>
-    
-
-
-    <!-- footer -->
-    <div class="footer">
-        
-            <p>Copyright 2018, by <a href="https://gbanares.github.io/gbanares/">@gb</a></p>
-        </div>
-    
-</div>
     <!-- Javascript -->
     <script src="assets/javascript/app.js"></script>
 
