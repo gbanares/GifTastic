@@ -30,7 +30,7 @@ displayGifs = function () {
     $("#gifDisplay").html('');
 		var results = response.data;
 
-		for (i=0; i<results.length; i++) {
+		for (i = 0; i < results.length; i++) {
       		var gifImage = GifDisplay(response.data[i]);
 			$("#gifDisplay").prepend(gifImage);
 		}
@@ -68,11 +68,12 @@ displayGifs = function () {
       var playstate = false;
     
       var gifElement = $("<div class='gif'></div>")
-      var rating = $("<p>rating: " + gifRating+"</p>");
       var gifImage = $("<img></img>");
-      gifElement.append(rating);
+      var rating = $("<p>rating: " + gifRating+"</p>");
+      
       gifElement.append(gifImage);
       gifImage.addClass("gifImage");
+      gifElement.append(rating);
       gifImage.attr("src", pauseGif);
     
           // click to toggle play / pause 
